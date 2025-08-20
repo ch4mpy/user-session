@@ -107,7 +107,7 @@
                 <directory>src/main/resources</directory>
             </resource>
             <resource>
-                <directory>../../certs</directory>
+                <directory>../certs</directory>
             </resource>
         </resources>
     </build>

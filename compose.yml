@@ -38,9 +38,9 @@ services:
     ports:
       - ${KC_HTTPS_PORT}:8443
     volumes:
-      - ./certs/tls.crt:/opt/keycloak/certs/tls.crt
-      - ./certs/tls.key:/opt/keycloak/certs/tls.key
-      - ./certs/tls.crt:/opt/keycloak/conf/truststores/tls.crt
+      - ./backend/certs/tls.crt:/opt/keycloak/certs/tls.crt
+      - ./backend/certs/tls.key:/opt/keycloak/certs/tls.key
+      - ./backend/certs/tls.crt:/opt/keycloak/conf/truststores/tls.crt
       - ./keycloak/import/:/opt/keycloak/data/import/
       - ./keycloak/providers/:/opt/keycloak/providers/
     depends_on:
@@ -83,7 +83,7 @@ services:
     - 80:80
     - 443:443
     volumes:
-      - ./certs/:/etc/nginx/certs/
+      - ./backend/certs/:/etc/nginx/certs/
     extra_hosts:
     - host.docker.internal:host-gateway
     depends_on:

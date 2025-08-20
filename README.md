@@ -35,7 +35,7 @@ If the dev machine does not have a recent Maven distribution, a maven wrapper is
 git clone git@github.com:ch4mpy/user-session.git
 cd user-session
 ```
-Copy the dev machine self-signed certificates to the `certs` directory. The files should be named `tls.crt`, `tls.jks`, and `tls.key`.
+Copy the dev machine self-signed certificates to the `/backend/certs` directory. The files should be named `tls.crt`, `tls.jks`, and `tls.key`.
 ```sh
 sh ./setup.sh
 docker compose up -d

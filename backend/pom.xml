@@ -57,7 +57,7 @@
 		<fmt-maven-plugin>2.23</fmt-maven-plugin>
 		<therapi.version>0.15.0</therapi.version>
 
-		<ca-certificates.binding>${project.basedir}/../../certs/tls.jks</ca-certificates.binding>
+		<ca-certificates.binding>${project.basedir}/../certs/tls.jks</ca-certificates.binding>
 
 		<imageName>user-session-${project.name}:${project.version}</imageName>
 

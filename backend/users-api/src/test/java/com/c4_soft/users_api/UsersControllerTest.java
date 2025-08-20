@@ -5,7 +5,6 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import org.junit.jupiter.api.Test;
-import org.keycloak.admin.api.RealmsAdminApi;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.context.annotation.Import;
@@ -14,6 +13,7 @@ import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import com.c4_soft.springaddons.security.oauth2.test.annotations.WithJwt;
 import com.c4_soft.springaddons.security.oauth2.test.webmvc.AutoConfigureAddonsWebmvcResourceServerSecurity;
 import com.c4_soft.springaddons.security.oauth2.test.webmvc.MockMvcSupport;
+import com.c4_soft.users_api.keycloak.AdminApiService;
 import com.c4_soft.users_api.users.UsersController;
 
 @WebMvcTest(UsersController.class)
@@ -25,7 +25,7 @@ class UsersControllerTest {
   MockMvcSupport api;
 
   @MockitoBean
-  RealmsAdminApi realmsAdminApi; // Mocked to avoid Keycloak connection issues in tests
+  AdminApiService adminApi; // Mocked to avoid Keycloak connection issues in tests
 
   // ------ /
   // Get me /

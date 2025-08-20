@@ -462,7 +462,7 @@
     "requiredActions" : [ ],
     "realmRoles" : [ "default-roles-sample" ],
     "clientRoles" : {
-      "realm-management" : [ "view-users" ]
+      "realm-management" : [ "view-users", "view-realm" ]
     },
     "notBefore" : 0,
     "groups" : [ ]

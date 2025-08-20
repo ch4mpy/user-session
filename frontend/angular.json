@@ -75,8 +75,8 @@
               "host": "0.0.0.0",
               "port": 4200,
               "proxyConfig": "proxy.conf.json",
-              "sslCert": "../certs/tls.crt",
-              "sslKey": "../certs/tls.key"
+              "sslCert": "../backend/certs/tls.crt",
+              "sslKey": "../backend/certs/tls.key"
             }
           },
           "defaultConfiguration": "development"
@@ -174,8 +174,8 @@
               "port": 5200,
               "proxyConfig": "proxy.conf.json",
               "ssl": true,
-              "sslCert": "../certs/tls.crt",
-              "sslKey": "../certs/tls.key"
+              "sslCert": "../backend/certs/tls.crt",
+              "sslKey": "../backend/certs/tls.key"
             }
           },
           "defaultConfiguration": "development"
